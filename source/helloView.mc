@@ -27,9 +27,7 @@ class helloView extends Ui.WatchFace {
 
     // Update the view
     function onUpdate(dc) {
-    
-        
-        
+
         // Get and show the current time
         var clockTime = Sys.getClockTime();
         //var timeHString = Lang.format("$1$", [clockTime.hour]);
@@ -41,12 +39,18 @@ class helloView extends Ui.WatchFace {
         //view.setText(timeMString);
         var view = View.findDrawableById("TimeLabel");
         view.setText(timeString);
-        
+
         view = View.findDrawableById("BatteryLabel");
         var stats = Sys.getSystemStats();
         var batteryString = Lang.format("$1$%", [stats.battery.toNumber()]);
         view.setText(batteryString);
-        
+
+        var activityInfo = Activ.getInfo();
+        var level = activityInfo.moveBarLevel;
+        var levelString = Lang.format("$1$", [level]);
+        view = View.findDrawableById("MoveLabel");
+        view.setText(levelString);
+
         var time = Time.now();
         var info = Date.info(time, Date.FORMAT_SHORT);
         var dowString = days[info.day_of_week];
@@ -57,26 +61,26 @@ class helloView extends Ui.WatchFace {
         var dateString = Lang.format("$1$.$2$.", [day, month]);
         view = View.findDrawableById("DateLabel");
         view.setText(dateString);
-        
+
         /*
         var iter = Activ.getHeartRateHistory(5, true);
         var sum = 0;
         var count = 0;
         var sample = iter.next();
-        	
+
         while(sample.heartRate != Activ.INVALID_HR_SAMPLE) {
         	Sys.println(sample.heartRate);
         	sum += sample.heartRate;
         	count++;
         	sample = iter.next();
         }
-        
+
         var aver = sum/count;
-        
+
         view = View.findDrawableById("HRLabel");
         view.setText(Lang.format("$1$", [aver]));
         */
-        
+
         // Call the parent onUpdate function to redraw the layout
         View.onUpdate(dc);
     }

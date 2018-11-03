@@ -1,14 +1,15 @@
 <layout id="WatchFace">
-    <drawable id="background"/> 
-     
-    <!-- <label id="TimeHLabel" x="60" y="33" font="Gfx.FONT_NUMBER_THAI_HOT" justification="Gfx.TEXT_JUSTIFY_CENTER" color="Gfx.COLOR_BLACK" background="Gfx.COLOR_WHITE"></label> 
+    <drawable id="background"/>
+
+    <!-- <label id="TimeHLabel" x="60" y="33" font="Gfx.FONT_NUMBER_THAI_HOT" justification="Gfx.TEXT_JUSTIFY_CENTER" color="Gfx.COLOR_BLACK" background="Gfx.COLOR_WHITE"></label>
     <label id="TimeCLabel" x="center" y="27" font="Gfx.FONT_NUMBER_THAI_HOT" justification="Gfx.TEXT_JUSTIFY_CENTER" color="Gfx.COLOR_BLACK" background="Gfx.COLOR_WHITE" text=":"></label>
     <label id="TimeMLabel" x="155" y="33" font="Gfx.FONT_NUMBER_THAI_HOT" justification="Gfx.TEXT_JUSTIFY_CENTER" color="Gfx.COLOR_BLACK" background="Gfx.COLOR_WHITE"></label> -->
     <label id="TimeLabel" x="center" y="33" font="Gfx.FONT_NUMBER_THAI_HOT" justification="Gfx.TEXT_JUSTIFY_CENTER" color="Gfx.COLOR_BLACK" background="Gfx.COLOR_WHITE"></label>
-    
+
     <label id="BatteryLabel" x="80" y="0" font="Gfx.FONT_NUMBER_MEDIUM" justification="Gfx.TEXT_JUSTIFY_CENTER" color="Gfx.COLOR_BLACK" background="Gfx.COLOR_WHITE"></label>
+    <label id="MoveLabel" x="150" y="0" font="Gfx.FONT_NUMBER_MEDIUM" justification="Gfx.TEXT_JUSTIFY_CENTER" color="Gfx.COLOR_BLACK" background="Gfx.COLOR_WHITE"></label>
     <!--  <label id="HRLabel" x="150" y="0" font="Gfx.FONT_NUMBER_MEDIUM" justification="Gfx.TEXT_JUSTIFY_CENTER" color="Gfx.COLOR_BLACK" background="Gfx.COLOR_WHITE"></label> -->
     <label id="DowLabel" x="60" y="133" font="Gfx.FONT_LARGE" justification="Gfx.TEXT_JUSTIFY_CENTER" color="Gfx.COLOR_BLACK" background="Gfx.COLOR_WHITE"></label>
     <label id="DateLabel" x="130" y="130" font="Gfx.FONT_NUMBER_MEDIUM" justification="Gfx.TEXT_JUSTIFY_CENTER" color="Gfx.COLOR_BLACK" background="Gfx.COLOR_WHITE"></label>
-     
+
     </layout>
